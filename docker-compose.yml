@@ -1,10 +1,10 @@
-version: '2'
-services:
-  demochat:
-   image: demochat:0.1
-   ports:
-      - 5000:5000
-   depends_on:
-      - mongo
-  mongo:
-    image: mongo
+app:
+  image: sdelements/lets-chat
+  links:
+    - mongo
+  ports:
+    - 8080:8080
+    - 5222:5222
+
+mongo:
+  image: mongo:latest
