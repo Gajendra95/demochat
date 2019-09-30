@@ -13,9 +13,11 @@ spec:
         service: demo-chat
     spec:
       containers:
-      - image: sreedocker123/demochatapp:latest
+      - image: sreedocker123/demochatlatest:latest
         name: app
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 5222
+          protocol: TCP
+        - containerPort: 8080
           protocol: TCP
