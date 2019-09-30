@@ -4,7 +4,9 @@
 version: '2'
 services:
   demochat:
-   image: demochat:0.1
+    build:
+      context: Dockerfile
+   image: sreedocker123/demochatmaster:latest
    ports:
       - 5000:5000
    depends_on:
