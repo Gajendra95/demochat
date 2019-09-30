@@ -13,7 +13,7 @@ spec:
         service: demo-chat
     spec:
       containers:
-      - image: sreedocker123/demochatmaster:latest
+      - image: sreedocker123/demochatapp:latest
         name: app
         imagePullPolicy: Always
         ports:
