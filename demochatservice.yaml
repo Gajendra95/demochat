@@ -8,8 +8,8 @@ spec:
   type: NodePort
   ports:
   - name: "http"
-    port: 8080
+    port: 5222
     protocol: TCP
-    targetPort: 8080
+    targetPort: 5222
   selector:
     service: demochat-board
