@@ -17,5 +17,5 @@ spec:
         name: app
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
           protocol: TCP
